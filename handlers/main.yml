@@ -1,0 +1,7 @@
+---
+# handlers file for libvirtd
+#
+- name: libvirtd
+  service:
+    name: libvirtd
+    state: restarted

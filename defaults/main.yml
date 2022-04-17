@@ -1,0 +1,14 @@
+---
+# defaults file for libvirtd
+#
+
+libvirtd_packages:
+  - "qemu-kvm" 
+  - "qemu-img"
+  - "libvirt"
+  - "virt-install"
+  - "virt-viewer"
+  - "libvirt-client"
+
+libvirtd_users:
+  - "ansible"
