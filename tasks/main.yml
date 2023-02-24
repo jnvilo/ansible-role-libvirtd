@@ -22,3 +22,15 @@
     groups: libvirt
     append: yes
   with_items: "{{libvirtd_users}}"
+
+
+#copy download_isos.sh to /usr/local/bin
+- name: copy download_isos.sh to /usr/local/bin
+  ansible.builtin.copy:
+    src: download_isos.sh
+    dest: /usr/local/bin/download_isos.sh
+    mode: '0755'
+    owner: root
+    group: root
+  tags:
+    - download_isos
